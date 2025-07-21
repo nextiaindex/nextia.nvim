@@ -1,0 +1,57 @@
+return {
+	'saghen/blink.cmp',
+	dependencies = { 'rafamadriz/friendly-snippets' },
+	opts = {
+		keymap = { preset = 'super-tab' },
+		appearance = { nerd_font_variant = 'mono' },
+		completion = {
+			menu = {
+				draw = {
+					align_to = 'cursor',
+					columns = {
+						{
+							"kind_icon",
+							"label",
+							gap = 1
+						},
+						{ "kind" }
+					},
+					gap = 10,
+					treesitter = {"lsp"}
+				},
+			},
+			documentation = {auto_show = false},
+			ghost_text = {enabled = true}
+		},
+		sources = {
+			providers = {
+				lsp = {
+					enabled = function ()
+						local clients = vim.lsp.get_active_clients({bufnr = vim.api.nvim_get_current_buf()})
+						return #clients > 0
+					end
+				},
+				path = {
+					enabled = function ()
+						local clients = vim.lsp.get_active_clients({bufnr = vim.api.nvim_get_current_buf()})
+						return #clients > 0
+					end
+				},
+				snippets = {
+					enabled = function ()
+						local clients = vim.lsp.get_active_clients({bufnr = vim.api.nvim_get_current_buf()})
+						return #clients > 0
+					end
+				},
+				buffer = {
+					enabled = function ()
+						local clients = vim.lsp.get_active_clients({bufnr = vim.api.nvim_get_current_buf()})
+						return #clients > 0
+					end
+				}
+			}
+		},
+		fuzzy = { implementation = "lua" },
+	},
+	opts_extend = {"sources.default"},
+}
