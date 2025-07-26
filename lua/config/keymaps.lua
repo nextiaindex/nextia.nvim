@@ -6,3 +6,5 @@
 	vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 	vim.keymap.set('n', '<leader>fo', builtin.oldfiles, { desc = 'Telescope oldfiles' })
 --
+-- NvimTree
+vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>')
