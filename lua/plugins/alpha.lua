@@ -19,7 +19,7 @@ return {
 			dashboard.button( "q", "󰅚  Quit Neovim" , ":qa<CR>"),
 		}
 
-		local headerPadding = vim.fn.max({2, vim.fn.floor(vim.fn.winheight(0) * 0.3)})
+		local headerPadding = vim.fn.max({2, vim.fn.floor(vim.fn.winheight(0) * 0.35)})
 		dashboard.config.layout = {
 			{
 				type = "padding",
@@ -29,7 +29,7 @@ return {
 
 			{
 				type = "padding",
-				val = 2
+				val = 3
 			},
 			dashboard.section.buttons,
 		}
