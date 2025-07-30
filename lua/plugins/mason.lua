@@ -15,7 +15,8 @@ return {
 			"pyright",
 			"intelephense",
 			"lemminx",
-			"bashls"
+			"bashls",
+			"ts_ls"
 		}
 	}
 }
