@@ -1,4 +1,5 @@
 return {
+	event = "VeryLazy",
 	"mason-org/mason-lspconfig.nvim",
 	dependencies = {
 		{
