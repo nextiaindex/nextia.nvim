@@ -7,6 +7,9 @@ return {
 			overrides = {
 				LineNr = { fg = "gray" },
 				CursorLineNr = { fg = "#f28779" },
+				BlinkCmpMenu = { bg = "#1f2430" },
+				BlinkCmpMenuBorder = { bg = "#1f2430" },
+				BlinkCmpKind = { bg = "#1f2430" }
 			}
 		})
 		vim.cmd("colorscheme ayu-mirage")
