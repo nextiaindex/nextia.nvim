@@ -32,8 +32,6 @@ vim.diagnostic.config({
 	signs = false
 })
 vim.opt.termguicolors = true
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
 
 -- Setup lazy.nvim
 require("lazy").setup({
