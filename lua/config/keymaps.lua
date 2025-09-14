@@ -7,3 +7,4 @@
 	vim.keymap.set('n', '<leader>fo', builtin.oldfiles, { desc = 'Telescope oldfiles' })
 --
 
+vim.keymap.set('n', '<leader>e', ':Ex<CR>')
