@@ -7,4 +7,3 @@
 	vim.keymap.set('n', '<leader>fo', builtin.oldfiles, { desc = 'Telescope oldfiles' })
 --
 
-vim.keymap.set('n', '<leader>ft', '<CMD>lua require("FTerm").toggle()<CR>') -- FTerm
