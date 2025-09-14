@@ -32,6 +32,7 @@ vim.diagnostic.config({
 	signs = false
 })
 vim.opt.termguicolors = true
+vim.notify = require("notify")
 
 -- Setup lazy.nvim
 require("lazy").setup({
