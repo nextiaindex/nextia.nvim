@@ -21,8 +21,13 @@ return {
 					treesitter = {"lsp"}
 				},
 			},
-			documentation = {auto_show = false},
-			ghost_text = {enabled = true}
+			documentation = {
+				auto_show = true,
+				window = {
+					border = 'rounded',
+				}
+			},
+			ghost_text = { enabled = true }
 		},
 		sources = {
 			providers = {
