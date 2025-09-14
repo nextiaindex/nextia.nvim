@@ -20,12 +20,11 @@ return {
 					gap = 10,
 					treesitter = {"lsp"}
 				},
+				border = 'rounded',
 			},
 			documentation = {
 				auto_show = true,
-				window = {
-					border = 'rounded',
-				}
+				window = { border = 'rounded' }
 			},
 			ghost_text = { enabled = true }
 		},
