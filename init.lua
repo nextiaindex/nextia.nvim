@@ -1,5 +1,4 @@
 require("config.lazy")
-require("config.ayumirage")
 require("config.setup")
 require("config.keymaps")
 require("config.autocmd")
