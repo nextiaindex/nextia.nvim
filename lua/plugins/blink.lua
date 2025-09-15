@@ -26,7 +26,12 @@ return {
 				auto_show = true,
 				window = { border = 'rounded' }
 			},
-			ghost_text = { enabled = true }
+			ghost_text = { enabled = true },
+			list = {
+				selection = {
+					auto_insert = false
+				}
+			}
 		},
 		sources = {
 			providers = {
