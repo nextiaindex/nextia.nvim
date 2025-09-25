@@ -19,5 +19,6 @@ return {
 			"bashls",
 			"ts_ls"
 		}
-	}
+	},
+	cmd = { "Mason", "MasonInstall", "MasonUpdate" }
 }
