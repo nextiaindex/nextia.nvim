@@ -3,5 +3,6 @@ return {
 	opts = {
 		render = "wrapped-compact",
 		stages = "static"
-	}
+	},
+	event = "VeryLazy"
 }
