@@ -4,7 +4,8 @@ return {
 	dependencies = {
 		{
 			"mason-org/mason.nvim",
-			opts = {}
+			opts = {},
+			cmd = { "Mason", "MasonInstall", "MasonUpdate" }
 		},
 		"neovim/nvim-lspconfig"
 	},
@@ -20,5 +21,4 @@ return {
 			"ts_ls"
 		}
 	},
-	cmd = { "Mason", "MasonInstall", "MasonUpdate" }
 }
