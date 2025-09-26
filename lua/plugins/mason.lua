@@ -16,7 +16,6 @@ return {
 			"cssls",
 			"pyright",
 			"intelephense",
-			"lemminx",
 			"bashls",
 			"ts_ls"
 		}
