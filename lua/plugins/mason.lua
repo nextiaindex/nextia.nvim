@@ -12,7 +12,7 @@ return {
 	opts = {
 		ensure_installed = {
 			"lua_ls",
-			"emmet_ls",
+			"emmet_language_server",
 			"cssls",
 			"pyright",
 			"intelephense",
