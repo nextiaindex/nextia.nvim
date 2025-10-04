@@ -22,7 +22,7 @@ return {
 							gap = 1
 						}
 					},
-					gap = 5,
+					gap = 2,
 					treesitter = {"lsp"},
 					components = {
 						source_name = {
