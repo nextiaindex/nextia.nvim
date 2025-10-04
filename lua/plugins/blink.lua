@@ -11,13 +11,18 @@ return {
 					align_to = 'cursor',
 					columns = {
 						{
-							"kind_icon",
-							"label",
-							gap = 1
+							"source_name"
 						},
-						{ "source_name" }
+						{
+							"label"
+						},
+						{
+							"kind_icon",
+							"kind",
+							gap = 1
+						}
 					},
-					gap = 10,
+					gap = 5,
 					treesitter = {"lsp"},
 					components = {
 						source_name = {
