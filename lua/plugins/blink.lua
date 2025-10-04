@@ -15,10 +15,19 @@ return {
 							"label",
 							gap = 1
 						},
-						{ "kind" }
+						{ "source_name" }
 					},
 					gap = 10,
-					treesitter = {"lsp"}
+					treesitter = {"lsp"},
+					components = {
+						source_name = {
+							width = { max = 30 },
+							text = function(ctx)
+								return "[" .. ctx.source_name .. "]"
+							end,
+							highlight = "BlinkCmpMenu",
+						}
+					}
 				},
 				border = 'rounded',
 			},
