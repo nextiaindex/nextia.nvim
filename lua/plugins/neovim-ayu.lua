@@ -12,6 +12,7 @@ return {
 				BlinkCmpLabelDeprecated = { bg = "#1f2430" }
 			}
 		})
-		vim.cmd("colorscheme ayu-mirage")
-	end
+		-- vim.cmd("colorscheme ayu-mirage")
+	end,
+	enabled = false
 }
