@@ -14,4 +14,5 @@ vim.diagnostic.config({
 	signs = false
 })
 vim.opt.termguicolors = true
+vim.opt.showmode = false
 vim.notify = require("notify")
