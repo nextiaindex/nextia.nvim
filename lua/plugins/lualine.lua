@@ -7,6 +7,9 @@ return {
 			section_separators = ""
 		},
 		sections = {
+			lualine_b = {
+				{ 'branch', icon = '' }
+			},
 			lualine_x = { 'filetype' }
 		}
 	}
