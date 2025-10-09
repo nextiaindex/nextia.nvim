@@ -14,8 +14,7 @@ return {
 				"javascript",
 				"html",
 				"css",
-				"lua",
-				"php"
+				"lua"
 			},
 			sync_install = true,
 			ignore_install = {},
