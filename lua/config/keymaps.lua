@@ -5,6 +5,6 @@ vim.keymap.set('n', '<leader>e', ':Ex<CR>')
 	vim.keymap.set('n', '<leader>|', ':vsplit<CR>')
 -- 
 -- Open lazy.nvim dashboard
-vim.keymap.set('n', '<leader>l', ':Lazy<CR>')
+vim.keymap.set('n', '<leader>lz', ':Lazy<CR>')
 -- Open mason.nvim dashbaord
 vim.keymap.set('n', '<leader>m', ':Mason<CR>')
