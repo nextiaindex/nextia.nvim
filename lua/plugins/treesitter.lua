@@ -1,23 +1,26 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	lazy = false,
 	build = ":TSUpdate",
-	branch = 'master',
 	dependencies = {
-		{
-			"windwp/nvim-ts-autotag",
-			opts = {}
-		}
+		"nvim-treesitter/nvim-treesitter-textobjects",
+		"windwp/nvim-ts-autotag"
 	},
-	opts = {
-		highlight = { enable = true },
-		auto_install = true,
-		sync_install = true,
-		ensure_installed = {
-			"html",
-			"css",
-			"php",
-			"lua"
-		}
-	}
+	config = function()
+		require("nvim-ts-autotag").setup()
+		require("nvim-treesitter.configs").setup({
+			highlight = { enable = true },
+			auto_install = true,
+			ensure_installed = {
+				"javascript",
+				"html",
+				"css",
+				"lua",
+				"php"
+			},
+			sync_install = true,
+			ignore_install = {},
+			modules = {},
+			incremental_selection = { enable = false },
+		})
+	end,
 }
