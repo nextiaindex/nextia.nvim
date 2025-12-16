@@ -7,6 +7,7 @@ return {
 		appearance = { nerd_font_variant = 'mono' },
 		completion = {
 			menu = {
+				border = 'rounded',
 				draw = {
 					align_to = 'cursor',
 					columns = {
@@ -23,6 +24,7 @@ return {
 			},
 			documentation = {
 				auto_show = false,
+				window = { border = 'rounded' }
 			},
 			ghost_text = { enabled = true },
 			list = {
