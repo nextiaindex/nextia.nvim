@@ -23,7 +23,7 @@ return {
 				},
 			},
 			documentation = {
-				auto_show = false,
+				auto_show = true,
 				window = { border = 'rounded' }
 			},
 			ghost_text = { enabled = true },
