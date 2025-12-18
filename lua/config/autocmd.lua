@@ -17,3 +17,9 @@ autocmd('Filetype', {
 	},
 	command = 'setlocal shiftwidth=4 tabstop=4'
 })
+
+augroup('disableCommentLeader', {clear = true})
+autocmd('Filetype', {
+	pattern = 'css',
+	command = 'setlocal formatoptions-=cro'
+})
