@@ -5,5 +5,10 @@ return {
 		require('mini.starter').setup()
 		require('mini.cmdline').setup()
 		require('mini.notify').setup()
+		require('mini.hipatterns').setup({
+			highlighters = {
+				hex_color = require('mini.hipatterns').gen_highlighter.hex_color()
+			}
+		})
 	end
 }
