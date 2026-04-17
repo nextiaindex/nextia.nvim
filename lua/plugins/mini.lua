@@ -3,7 +3,6 @@ return {
 	version = '*',
 	config = function()
 		require('mini.starter').setup()
-		require('mini.cmdline').setup()
 		require('mini.notify').setup()
 		require('mini.hipatterns').setup({
 			highlighters = {
